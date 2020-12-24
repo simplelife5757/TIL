@@ -34,3 +34,16 @@ Race Condition 3가지 조건
 
 3번을 방지한다. => 끼어들지 않는다. 
 - 협력적 쓰레드 사용 -> 파이버, 코루틴, 그린 쓰레드.. 다음 시간에 이어서.. 
+- 락, 뮤텍스, 세마포
+
+- Green Threads
+    - 일반적으로 생각하는 Threads -> Kernel Space 에서 OS에 의해 관리되는 Threads
+    - Green Threads는 그와 다르게 User Space 에서 runtime library or vm에 의해서 관리되는 Threads 
+
+- critical section
+    - 공유하는 변수에 접근할 수 있는 코드 영역
+    - atomic action is required in a critical section 
+        - only one process can execute in its critical section at a time
+
+User Space & Kernel Space 에 대해 제대로 모르고 있었네.. 
+https://www.redhat.com/en/blog/architecting-containers-part-1-why-understanding-user-space-vs-kernel-space-matters
